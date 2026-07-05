@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة حب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Amiri', serif;
+            background: linear-gradient(145deg, #f8f0f0 0%, #ebdada 100%);
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* البطاقة الزجاجية */
+        .card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 40px;
+            padding: 45px 40px;
+            max-width: 780px;
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(80, 50, 70, 0.12), 0 10px 20px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            position: relative;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        /* العنوان */
+        h1 {
+            text-align: center;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 2.5em;
+            color: #4a2c4a;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .sub-title {
+            text-align: center;
+            font-size: 1em;
+            color: #9a7a8a;
+            margin-bottom: 30px;
+            font-weight: 300;
+            border-bottom: 2px solid rgba(74, 44, 74, 0.08);
+            padding-bottom: 20px;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        /* تنسيق فقرات الرسالة */
+        .letter p {
+            color: #3b2b3b;
+            font-size: 1.2em;
+            line-height: 2.2;
+            font-weight: 400;
+            text-align: right;
+            margin-bottom: 18px;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+        }
+
+        /* تنسيق خاص لآخر جملة (سلام) */
+        .letter .final-sentence {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #a04060;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(160, 64, 96, 0.15);
+        }
+
+        /* القلوب المتساقطة */
+        .heart {
+            position: fixed;
+            color: #e91e63;
+            font-size: 18px;
+            top: -20px;
+            z-index: 1;
+            opacity: 0.4;
+            pointer-events: none;
+            animation: fall linear infinite;
+            user-select: none;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(0.8);
+                opacity: 0.4;
+            }
+            100% {
+                transform: translateY(110vh) rotate(720deg) scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        /* تحسين للشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .letter p {
+                font-size: 1em;
+                line-height: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- البطاقة الأساسية -->
+    <div class="card">
+        <h1>إلى حبيبتي</h1>
+        <div class="sub-title">رسالة من قلب لم يعرف الحب إلا بكِ</div>
+
+        <div class="letter">
+            <p>أنا مش عارف دلوقتي إنتي فكرتي في إيه ولا وصلتي لإيه، مش عارف وإنتي بتقري كلامي ده ناوية تكملي معايا وتحاولي مرة أخيرة ولا خلاص أخدتي قرارك إنك تمشي.</p>
+
+            <p>لو لسه في جواكي أمل حتى لو صغير، ادّي لقلبنا فرصة أخيرة، وكَمّلي قراية لأن كل كلمة جاية مكتوبة ليكي من قلبي.</p>
+
+            <p>ولو قرارك خلاص ومفيش حاجة هتغيره، وإن دي نهاية حكايتنا، برضه كملي للآخر، لأن يمكن دي تكون آخر مرة أقولك فيها كل حاجه من جوايا.</p>
+
+            <p>أنا عارف اني قصرت معاكي في حاجات كتير، ممكن ماكنش الشخص الكامل ليكي. عارف اني عملت حاجات ضيعت زهو العلاقه، ضيعت الامان من ناحيه لما كنتي تيجي تحكيلي حاجه وتكون الحاجه مثلا غلطي فيها او الامر عادي بس يدايقني واتناقشت فيه غلط وعملت مشكله. في مشكله حصلت قبل كده كان عن ان ممكن كلمه صغيره تجرحك وساعتها اتعاملت غلط في الامر وقولتلك دي كلمه تفهه ماتعملش حاجه، انتي بتكبري الموضوع. كان فعلا لازم اخد الامر بأهدى من كده عشان احنا فعلا مش زي بعض، انا راجل وانتي ست، ردود افعالنا و استقبلنا للكلمات والمواضيع غير.</p>
+
+            <p>لما حصل بردو انك حسيتي اني مش جمبك، انا فعلا كنت غلط اني مش مديكي الامان والامان ده ضاع لما كانت لغه الحوار كلها شد وجذب علي اي حاجه تحكيها ليا، يمكن خوفتك من رده فعلي علي اي حاجه تبقي عاوزه تحكيها، وبحكم علي اني شايف اي وغلطان اني مش بواجهك من قبل ما الموضوع يكبر.</p>
+
+            <p>عمتا أنا مش هعاتبك ومش هقولك متمشيش، لأن اللي قرر يمشي خلاص أخد قراره. لكن كان نفسي النهاية متبقاش بالشكل ده، كان نفسي آخر صفحة في حكايتنا تبقى أهدى من كده، لأن اللي كان بينا كان أكبر من إنه ينتهي بكام كلمة.</p>
+
+            <p>أنا حبيتك بجد، حبيتك بطريقة خلتني أشوف مستقبلي كله معاكي، كل حلم كان في بالي كنتِ موجودة فيه. كل مرة كنت بتعب فيها كنت ببقى مستني أكلمك عشان أنسى واحكيلك وتهوني عليا، كنتي بالنسبة لي أمان وسند وفرحة كنت مستنيها كل يوم.</p>
+
+            <p>عارفة أصعب إحساس إيه؟ إن الإنسان يصحى وهو عارف إن الشخص اللي كان بيحارب الدنيا كلها عشانه بقى هيكمل حياته من غيره، إن كل العادات اللي اتعود عليها وكل الرسائل وكل الضحك فجأة يبقوا مجرد ذكريات.</p>
+
+            <p>أنا مش زعلان إنك هتمشي، أنا زعلان إنك كنتي بالنسبة لي بيت وفجأة بقيت غريب عنه. زعلان إن كل مرة كنت بقول إحنا دلوقتي هتبقى أنا لوحدي.</p>
+
+            <p>يمكن مع الوقت هتنسيني، ويمكن هتقابلي ناس أحسن مني، ويمكن تضحكي نفس الضحكة مع حد تاني، بس أنا صعب أنسى. صعب أنسى أول مرة اتكلمنا وأول مرة ضحكتينا سوا وكل مرة حسيت إن الدنيا خفيفة عشان إنتي فيها.</p>
+
+            <p>ولو في يوم قصرت في حقك أو زعلتك من غير قصد، فحقك عليا والله ما كان في يوم قصدي أوجعك ولا كنت أتمنى أشوف النهاية دي. كنت كل اللي نفسي فيه إننا نكمل حتى لو الدنيا كلها كانت ضدنا.</p>
+
+            <p>مش هطلب منك ترجعي، لأن الحب عمره ما كان بالإجبار. لكن هطلب منك حاجة واحدة: لما تفتكريني افتكريني بالخير، وافتكري إن كان في شخص حبك بكل اللي فيه وكان مستعد يعمل أي حاجة عشان يشوفك مبسوطة، حتى لو في الآخر سعادتك كانت بعيد عنه.</p>
+
+            <p>أنا هسيبك تمشي، بس هيفضل جزء مني واقف عند آخر لحظة كانت بينا. يمكن الأيام تعلمني أنسى ويمكن لا، لكن اللي متأكد منه إنك هتفضلي واحدة من أهم الناس اللي دخلوا حياتي.</p>
+
+            <p>ربنا يحفظك ويحققلك كل اللي نفسك فيه ويكتبلك الخير في أي طريق هتمشيه، أما أنا فهفضل أدعيلك من بعيد حتى لو مبقاش ليا مكان في حياتك.</p>
+
+            <p class="final-sentence">سلام يا اكتر حاجه حبيتها وهتوحشيني، ويمكن دي أصعب حاجه هقولها في حياتي.<br>من حبيبك الوفي</p>
+        </div>
+    </div>
+
+    <script>
+        // دالة لإضافة قلوب صغيرة تتساقط بهدوء على الشاشة
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '♥';  // شكل القلب
+            heart.style.left = Math.random() * 100 + 'vw'; // مكان عشوائي أفقي
+            heart.style.fontSize = (Math.random() * 15 + 12) + 'px'; // حجم بين 12 و 27
+            heart.style.animationDuration = (Math.random() * 6 + 6) + 's'; // سرعة بين 6 و 12 ثانية
+            heart.style.opacity = Math.random() * 0.4 + 0.2; // شفافية خفيفة
+            document.body.appendChild(heart);
+
+            // حذف القلب بعد ما يخلص عشان ما يتراكمش
+            setTimeout(() => {
+                heart.remove();
+            }, 12000);
+        }
+
+        // كل 350 ملي ثانية تظهر قلب جديد (مش كتير عشان ميحصلش زحمة)
+        setInterval(createHeart, 350);
+    </script>
+
+</body>
+</html>
