@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رسالة من قلب وفي</title>
+    <title>رسالة وداع</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* --- إعدادات عامة --- */
         * {
             margin: 0;
             padding: 0;
@@ -19,83 +18,83 @@
             justify-content: center;
             align-items: center;
             font-family: 'Amiri', serif;
-            background: linear-gradient(145deg, #faf3f0 0%, #f5e9e7 100%);
+            /* خلفية رمادية غامقة جداً (سوداء مطفية) */
+            background: #242024;
             padding: 25px;
             margin: 0;
             position: relative;
         }
 
-        /* --- الظرف (هادئ وناعم) --- */
+        /* الظرف رمادي غامق بارد */
         .envelope {
-            background: #f2e3db;
+            background: #3d3638;
             padding: 40px 35px 35px 35px;
             border-radius: 22px;
-            box-shadow: 0 20px 45px rgba(100, 70, 60, 0.08), inset 0 1px 4px rgba(255, 255, 255, 0.7);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.03);
             max-width: 860px;
             width: 100%;
-            border: 1px solid #e0cfc5;
-            transition: all 0.3s ease;
+            border: 1px solid #544c4e;
         }
 
-        /* --- الورقة (الجواب) --- */
+        /* الورقة بنية داكنة جداً (عتيقة حزينة) */
         .letter-paper {
-            background: #fffdfb;
+            background: #3b3430;
             padding: 50px 45px 45px 45px;
             border-radius: 16px;
-            box-shadow: inset 0 0 0 1px #f2e6de, 0 8px 28px rgba(80, 50, 40, 0.06);
-            border: 1px solid #e9dad0;
+            box-shadow: inset 0 0 0 1px #554a44, 0 8px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid #4d423c;
             position: relative;
         }
 
-        /* --- الطابع البريدي (خافت وناعم) --- */
+        /* الطابع باهت جداً */
         .stamp {
             position: absolute;
             top: 22px;
             left: 25px;
-            background: #f0e4dd;
-            border: 1px dashed #d5bfb4;
+            background: #4d4440;
+            border: 1px dashed #6b5e58;
             padding: 6px 14px 4px 14px;
-            font-size: 30px;
+            font-size: 28px;
             border-radius: 8px;
-            transform: rotate(3deg);
-            color: #a88b80;
+            transform: rotate(2deg);
+            color: #9a8a82;
             font-family: 'Tajawal', sans-serif;
             font-weight: 700;
             line-height: 1;
             z-index: 5;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            opacity: 0.5;
         }
         .stamp small {
-            font-size: 11px;
+            font-size: 10px;
             display: block;
-            color: #b8a098;
+            color: #7a6a62;
             font-weight: 400;
-            letter-spacing: 1px;
         }
 
-        /* --- ختم الشمع (وردي ناعم جداً) --- */
+        /* ختم الشمع (أحمر داكن جداً زي الدم المتجمد) */
         .wax-seal {
             position: absolute;
             bottom: 35px;
             right: 35px;
             width: 65px;
             height: 65px;
-            background: radial-gradient(circle at 35% 35%, #ecc8c8, #d4a8a8);
+            background: radial-gradient(circle at 35% 35%, #6e1a2a, #3a0a14);
             border-radius: 50%;
-            box-shadow: 0 4px 14px rgba(180, 120, 120, 0.15), inset 0 -2px 4px rgba(0,0,0,0.04), inset 0 3px 8px rgba(255,220,220,0.6);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6), inset 0 -2px 4px rgba(0,0,0,0.3);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 30px;
-            color: #fdf6f0;
-            text-shadow: 0 1px 3px rgba(120, 60, 60, 0.2);
-            transform: rotate(-6deg);
-            border: 2px solid #dbb5b5;
+            font-size: 28px;
+            color: #ac8a8a;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+            transform: rotate(-8deg);
+            border: 2px solid #4a121e;
             z-index: 6;
             font-family: 'Tajawal', sans-serif;
+            opacity: 0.8;
         }
 
-        /* --- تنسيق النص (خط كبير جداً وهادئ) --- */
+        /* تنسيق النص (رمادي فاتح على خلفية غامقة) */
         .letter-content {
             margin-top: 8px;
             position: relative;
@@ -103,53 +102,57 @@
         }
         .letter-content h1 {
             font-family: 'Tajawal', sans-serif;
-            font-size: 2.8em;
-            color: #4a3030;
+            font-size: 2.6em;
+            color: #c8bcb6;
             text-align: center;
             font-weight: 700;
             margin-bottom: 6px;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
+            opacity: 0.8;
         }
         .letter-content .sub {
             text-align: center;
-            font-size: 1.2em;
-            color: #a8887a;
+            font-size: 1.15em;
+            color: #8a7a72;
             font-weight: 300;
-            border-bottom: 2px solid #f0e6e0;
+            border-bottom: 2px solid #554a44;
             padding-bottom: 22px;
             margin-bottom: 28px;
             font-family: 'Tajawal', sans-serif;
+            opacity: 0.6;
         }
 
         .letter-content p {
-            color: #3d2c22;
-            font-size: 1.5em;  /* كبرنا الخط */
-            line-height: 2.8;  /* مسافة كبيرة بين السطور عشان الهدوء */
+            color: #cfc5bf;
+            font-size: 1.5em;
+            line-height: 2.8;
             font-weight: 400;
             margin-bottom: 22px;
             text-align: right;
-            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            opacity: 0.85;
         }
 
         .letter-content .final-sentence {
-            font-size: 1.7em;  /* كبرناها برضو */
+            font-size: 1.7em;
             font-weight: 700;
-            color: #8a4a50;
+            color: #b89a92;
             text-align: center;
             margin-top: 40px;
             padding-top: 30px;
-            border-top: 2px solid rgba(180, 120, 120, 0.12);
+            border-top: 2px solid rgba(200, 180, 170, 0.08);
             line-height: 2.6;
+            opacity: 0.7;
         }
 
-        /* --- القلوب المتساقطة (هادية جداً وباستيل) --- */
+        /* قلوب رمادية متساقطة شبه شفافة */
         .heart {
             position: fixed;
-            color: #e8cdcd;
+            color: #6a6060;
             font-size: 22px;
             top: -20px;
             z-index: 0;
-            opacity: 0.25;
+            opacity: 0.08;
             pointer-events: none;
             animation: fall linear infinite;
             user-select: none;
@@ -157,46 +160,23 @@
 
         @keyframes fall {
             0% {
-                transform: translateY(0) rotate(0deg) scale(0.6);
-                opacity: 0.25;
+                transform: translateY(0) rotate(0deg) scale(0.5);
+                opacity: 0.08;
             }
             100% {
-                transform: translateY(110vh) rotate(720deg) scale(1.2);
+                transform: translateY(110vh) rotate(720deg) scale(1.0);
                 opacity: 0;
             }
         }
 
-        /* --- استجابة للجوال (تقلل الخط شوية عشان مايخرجش بره) --- */
         @media (max-width: 650px) {
-            .envelope {
-                padding: 18px 12px;
-            }
-            .letter-paper {
-                padding: 25px 18px 30px;
-            }
-            .letter-content h1 {
-                font-size: 2em;
-            }
-            .letter-content p {
-                font-size: 1.15em;
-                line-height: 2.4;
-            }
-            .letter-content .final-sentence {
-                font-size: 1.3em;
-            }
-            .stamp {
-                font-size: 22px;
-                padding: 3px 10px;
-                top: 14px;
-                left: 14px;
-            }
-            .wax-seal {
-                width: 50px;
-                height: 50px;
-                font-size: 22px;
-                bottom: 20px;
-                right: 20px;
-            }
+            .envelope { padding: 18px 12px; }
+            .letter-paper { padding: 25px 18px 30px; }
+            .letter-content h1 { font-size: 2em; }
+            .letter-content p { font-size: 1.15em; line-height: 2.4; }
+            .letter-content .final-sentence { font-size: 1.3em; }
+            .stamp { font-size: 20px; padding: 3px 10px; top: 14px; left: 14px; }
+            .wax-seal { width: 50px; height: 50px; font-size: 22px; bottom: 20px; right: 20px; }
         }
     </style>
 </head>
@@ -204,71 +184,46 @@
 
     <div class="envelope">
         <div class="letter-paper">
-
-            <!-- الطابع -->
-            <div class="stamp">
-                ✉️
-                <small>بريد الحب</small>
-            </div>
-
-            <!-- الختم الوردي -->
-            <div class="wax-seal">❤️</div>
-
-            <!-- المحتوى -->
+            <div class="stamp">✉️ <small>بريد الذكريات</small></div>
+            <div class="wax-seal">💔</div>
             <div class="letter-content">
                 <h1>إلى حبيبتي</h1>
-                <div class="sub">رسالة من قلب لم يعرف الحب إلا بكِ</div>
+                <div class="sub">رسالة من قلب يودع</div>
 
-                <!-- النص الكامل -->
                 <p>أنا مش عارف دلوقتي إنتي فكرتي في إيه ولا وصلتي لإيه، مش عارف وإنتي بتقري كلامي ده ناوية تكملي معايا وتحاولي مرة أخيرة ولا خلاص أخدتي قرارك إنك تمشي.</p>
-
                 <p>لو لسه في جواكي أمل حتى لو صغير، ادّي لقلبنا فرصة أخيرة، وكَمّلي قراية لأن كل كلمة جاية مكتوبة ليكي من قلبي.</p>
-
                 <p>ولو قرارك خلاص ومفيش حاجة هتغيره، وإن دي نهاية حكايتنا، برضه كملي للآخر، لأن يمكن دي تكون آخر مرة أقولك فيها كل حاجه من جوايا.</p>
-
                 <p>أنا عارف اني قصرت معاكي في حاجات كتير، ممكن ماكنش الشخص الكامل ليكي. عارف اني عملت حاجات ضيعت زهو العلاقه، ضيعت الامان من ناحيه لما كنتي تيجي تحكيلي حاجه وتكون الحاجه مثلا غلطي فيها او الامر عادي بس يدايقني واتناقشت فيه غلط وعملت مشكله. في مشكله حصلت قبل كده كان عن ان ممكن كلمه صغيره تجرحك وساعتها اتعاملت غلط في الامر وقولتلك دي كلمه تفهه ماتعملش حاجه، انتي بتكبري الموضوع. كان فعلا لازم اخد الامر بأهدى من كده عشان احنا فعلا مش زي بعض، انا راجل وانتي ست، ردود افعالنا و استقبلنا للكلمات والمواضيع غير.</p>
-
                 <p>لما حصل بردو انك حسيتي اني مش جمبك، انا فعلا كنت غلط اني مش مديكي الامان والامان ده ضاع لما كانت لغه الحوار كلها شد وجذب علي اي حاجه تحكيها ليا، يمكن خوفتك من رده فعلي علي اي حاجه تبقي عاوزه تحكيها، وبحكم علي اني شايف اي وغلطان اني مش بواجهك من قبل ما الموضوع يكبر.</p>
-
                 <p>عمتا أنا مش هعاتبك ومش هقولك متمشيش، لأن اللي قرر يمشي خلاص أخد قراره. لكن كان نفسي النهاية متبقاش بالشكل ده، كان نفسي آخر صفحة في حكايتنا تبقى أهدى من كده، لأن اللي كان بينا كان أكبر من إنه ينتهي بكام كلمة.</p>
-
                 <p>أنا حبيتك بجد، حبيتك بطريقة خلتني أشوف مستقبلي كله معاكي، كل حلم كان في بالي كنتِ موجودة فيه. كل مرة كنت بتعب فيها كنت ببقى مستني أكلمك عشان أنسى واحكيلك وتهوني عليا، كنتي بالنسبة لي أمان وسند وفرحة كنت مستنيها كل يوم.</p>
-
                 <p>عارفة أصعب إحساس إيه؟ إن الإنسان يصحى وهو عارف إن الشخص اللي كان بيحارب الدنيا كلها عشانه بقى هيكمل حياته من غيره، إن كل العادات اللي اتعود عليها وكل الرسائل وكل الضحك فجأة يبقوا مجرد ذكريات.</p>
-
                 <p>أنا مش زعلان إنك هتمشي، أنا زعلان إنك كنتي بالنسبة لي بيت وفجأة بقيت غريب عنه. زعلان إن كل مرة كنت بقول إحنا دلوقتي هتبقى أنا لوحدي.</p>
-
                 <p>يمكن مع الوقت هتنسيني، ويمكن هتقابلي ناس أحسن مني، ويمكن تضحكي نفس الضحكة مع حد تاني، بس أنا صعب أنسى. صعب أنسى أول مرة اتكلمنا وأول مرة ضحكتينا سوا وكل مرة حسيت إن الدنيا خفيفة عشان إنتي فيها.</p>
-
                 <p>ولو في يوم قصرت في حقك أو زعلتك من غير قصد، فحقك عليا والله ما كان في يوم قصدي أوجعك ولا كنت أتمنى أشوف النهاية دي. كنت كل اللي نفسي فيه إننا نكمل حتى لو الدنيا كلها كانت ضدنا.</p>
-
                 <p>مش هطلب منك ترجعي، لأن الحب عمره ما كان بالإجبار. لكن هطلب منك حاجة واحدة: لما تفتكريني افتكريني بالخير، وافتكري إن كان في شخص حبك بكل اللي فيه وكان مستعد يعمل أي حاجة عشان يشوفك مبسوطة، حتى لو في الآخر سعادتك كانت بعيد عنه.</p>
-
                 <p>أنا هسيبك تمشي، بس هيفضل جزء مني واقف عند آخر لحظة كانت بينا. يمكن الأيام تعلمني أنسى ويمكن لا، لكن اللي متأكد منه إنك هتفضلي واحدة من أهم الناس اللي دخلوا حياتي.</p>
-
                 <p>ربنا يحفظك ويحققلك كل اللي نفسك فيه ويكتبلك الخير في أي طريق هتمشيه، أما أنا فهفضل أدعيلك من بعيد حتى لو مبقاش ليا مكان في حياتك.</p>
 
                 <p class="final-sentence">سلام يا اكتر حاجه حبيتها وهتوحشيني، ويمكن دي أصعب حاجه هقولها في حياتي.<br>من حبيبك الوفي</p>
             </div>
-
         </div>
     </div>
 
     <script>
-        // قلوب وردية فاتحة جداً (تساقط هادي)
         function createHeart() {
             const heart = document.createElement('div');
             heart.classList.add('heart');
             heart.innerHTML = '♡';
             heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.fontSize = (Math.random() * 20 + 16) + 'px';
-            heart.style.animationDuration = (Math.random() * 10 + 10) + 's';
-            heart.style.opacity = Math.random() * 0.2 + 0.1;
+            heart.style.fontSize = (Math.random() * 22 + 14) + 'px';
+            heart.style.animationDuration = (Math.random() * 14 + 12) + 's';
+            heart.style.opacity = Math.random() * 0.1 + 0.04;
             document.body.appendChild(heart);
-            setTimeout(() => heart.remove(), 20000);
+            setTimeout(() => heart.remove(), 26000);
         }
-        setInterval(createHeart, 450);
+        setInterval(createHeart, 500);
     </script>
 
 </body>
-  </html>
+                    </html>
